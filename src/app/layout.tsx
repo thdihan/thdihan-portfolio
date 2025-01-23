@@ -31,6 +31,8 @@ export default function RootLayout({
             >
                 <div className="size-[400px] bg-secondary rounded-full blur-[120px] absolute top-[50%] -left-[15%] -translate-y-[50%] opacity-[0.1]"></div>
 
+                <div className="size-[400px] bg-secondary rounded-full blur-[120px] absolute top-[50%] left-[50%] -translate-y-[50%] opacity-[0.1]"></div>
+
                 <Navbar />
 
                 <div className="w-full max-w-[1100px] mx-auto"> {children}</div>

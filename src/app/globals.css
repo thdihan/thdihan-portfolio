@@ -32,4 +32,5 @@
     animation-duration: 0.5s;
     animation-name: fadeInDown;
     animation-timing-function: ease-out;
+    z-index: 1000;
 }

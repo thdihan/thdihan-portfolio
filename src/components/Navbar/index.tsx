@@ -1,8 +1,8 @@
 "use client";
-import { helvatica } from "@/fonts/CustomFont";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Switch from "@mui/joy/Switch";
+import Logo from "./Logo";
+import NavElement from "./NavElement";
+import NavButtons from "./NavButtons";
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -28,43 +28,11 @@ const Navbar = () => {
             <div
                 className={` w-full max-w-[1100px] mx-auto p-4 flex justify-between items-center`}
             >
-                <h1
-                    className={`${helvatica.className} text-2xl text-secondary font-bold`}
-                >
-                    thdihan._
-                </h1>
+                <Logo text="thdihan._" />
 
-                <ul className="flex gap-4">
-                    <li>
-                        <Link href={"/"} className="text-[#7f92b0] text-sm">
-                            Home
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href={"/"} className="text-[#7f92b0] text-sm">
-                            About Me
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href={"/"} className="text-[#7f92b0] text-sm">
-                            Portfolio
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href={"/"} className="text-[#7f92b0] text-sm">
-                            Contact Me
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href={"/"} className="text-[#7f92b0] text-sm">
-                            Github
-                        </Link>
-                    </li>
-                </ul>
+                <NavElement />
 
-                <div>
-                    <Switch />
-                </div>
+                <NavButtons />
             </div>
         </nav>
     );
