@@ -35,7 +35,7 @@ export default function RootLayout({
 
                 <Navbar />
 
-                <div className="w-full max-w-[1100px] mx-auto"> {children}</div>
+                <div className="w-full max-w-[1260px] mx-auto"> {children}</div>
             </body>
         </html>
     );

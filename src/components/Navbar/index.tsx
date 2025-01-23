@@ -25,10 +25,10 @@ const Navbar = () => {
             <nav
                 className={`w-full ${
                     scrolled ? "sticky border-b border-[#222f43]" : ""
-                } bg-primary `}
+                } bg-primary py-6`}
             >
                 <div
-                    className={` w-full max-w-[1100px] mx-auto p-4 flex justify-between items-center`}
+                    className={`w-full max-w-[1260px] mx-auto  flex justify-between items-center`}
                 >
                     <Logo text="thdihan._" />
 

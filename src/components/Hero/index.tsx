@@ -4,7 +4,7 @@ import Particles from "../Particles";
 
 const Hero = () => {
     return (
-        <div className="h-[100vh-72px] flex items-center py-64">
+        <div className="w-full h-[100vh-72px] flex items-center py-64 justify-center">
             <Particles />
             <div>
                 <h1

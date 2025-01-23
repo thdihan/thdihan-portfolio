@@ -33,4 +33,5 @@
     animation-name: fadeInDown;
     animation-timing-function: ease-out;
     z-index: 1000;
+    padding: 1rem 0;
 }
