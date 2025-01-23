@@ -20,21 +20,24 @@ const Navbar = () => {
         window.addEventListener("scroll", handleScroll);
     });
     return (
-        <nav
-            className={`w-full ${
-                scrolled ? "sticky border-b border-[#222f43]" : ""
-            } bg-primary `}
-        >
-            <div
-                className={` w-full max-w-[1100px] mx-auto p-4 flex justify-between items-center`}
+        <>
+            <div className={`${scrolled ? "h-[75px]" : "h-0"}`}></div>
+            <nav
+                className={`w-full ${
+                    scrolled ? "sticky border-b border-[#222f43]" : ""
+                } bg-primary `}
             >
-                <Logo text="thdihan._" />
+                <div
+                    className={` w-full max-w-[1100px] mx-auto p-4 flex justify-between items-center`}
+                >
+                    <Logo text="thdihan._" />
 
-                <NavElement />
+                    <NavElement />
 
-                <NavButtons />
-            </div>
-        </nav>
+                    <NavButtons />
+                </div>
+            </nav>
+        </>
     );
 };
 
