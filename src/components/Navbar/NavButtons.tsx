@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Github, Moon, Sun } from "lucide-react";
+import { jetbrainsMono } from "@/fonts";
 
 const NavButtons = () => {
     const [darkMode, setDarkMode] = useState(true);
@@ -30,7 +31,10 @@ const NavButtons = () => {
                     }}
                     className="bg-secondary px-4 py-2 rounded-md flex justify-between gap-2 font-semibold"
                 >
-                    <Github /> <span>thdihan</span>
+                    <Github />{" "}
+                    <span className={`${jetbrainsMono.className}`}>
+                        thdihan
+                    </span>
                 </button>
             </div>
         </div>
