@@ -1,13 +1,11 @@
 import { jetbrainsMono } from "@/fonts";
-import { helvatica } from "@/fonts/CustomFont";
 import React from "react";
 
 type Props = {
-    text?: string;
     image?: string;
 };
 
-const Logo = ({ text, image }: Props) => {
+const Logo = ({ image }: Props) => {
     return (
         <>
             {image ? (

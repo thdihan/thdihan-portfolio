@@ -30,7 +30,7 @@ const Navbar = () => {
                 <div
                     className={`w-full max-w-[1260px] mx-auto  flex justify-between items-center`}
                 >
-                    <Logo text="thdihan._" />
+                    <Logo />
 
                     <NavElement />
 
