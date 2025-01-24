@@ -7,6 +7,7 @@ on:
             - main
 jobs:
     deploy:
+        name: Deploy to Remote Server
         runs-on: ubuntu-latest
         steps:
             - name: Checkout Code
@@ -25,7 +26,7 @@ jobs:
                     git pull
                     pnpm i
                     pnpm build
-                    systemctl restart pnpm-start-thdihan-dev.service
+                    sudo systemctl restart pnpm-start-thdihan-dev.service
                     exit
                   EOF
               shell: bash

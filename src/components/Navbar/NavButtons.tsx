@@ -6,7 +6,7 @@ import { jetbrainsMono } from "@/fonts";
 const NavButtons = () => {
     const [darkMode, setDarkMode] = useState(true);
     return (
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-6 items-center">
             {/* Dark Mode  */}
             <div>
                 {darkMode ? (
