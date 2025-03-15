@@ -6,6 +6,7 @@ import NavButtons from "./NavButtons";
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
+    const [active, setActive] = useState(false);
 
     const handleScroll = () => {
         const offset = window.scrollY;
@@ -25,16 +26,16 @@ const Navbar = () => {
             <nav
                 className={`w-full ${
                     scrolled ? "sticky border-b border-[#222f43]" : ""
-                } bg-primary py-6`}
+                } bg-primary py-6 px-4 md:px-0`}
             >
                 <div
                     className={`w-full max-w-[1260px] mx-auto  flex justify-between items-center`}
                 >
                     <Logo />
 
-                    <NavElement />
+                    <NavElement active={active} />
 
-                    <NavButtons />
+                    <NavButtons active={active} setActive={setActive} />
                 </div>
             </nav>
         </>
