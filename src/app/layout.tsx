@@ -29,9 +29,9 @@ export default function RootLayout({
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary `}
             >
-                {/* <div className="size-[400px] bg-secondary rounded-full blur-[120px] absolute top-[50%] -left-[15%] -translate-y-[50%] opacity-[0.1]"></div>
+                <div className="size-full md:size-[400px] bg-secondary rounded-full blur-[120px] absolute top-[50%] -left-[15%] -translate-y-[50%] opacity-[0.1]"></div>
 
-                <div className="size-[400px] bg-secondary rounded-full blur-[120px] absolute top-[50%] left-[50%] -translate-y-[50%] opacity-[0.1]"></div> */}
+                <div className="size-full md:size-[400px] bg-secondary rounded-full blur-[120px] absolute top-[50%] left-[50%] -translate-y-[50%] opacity-[0.1]"></div>
 
                 <Navbar />
 
