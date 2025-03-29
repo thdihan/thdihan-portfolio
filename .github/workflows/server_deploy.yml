@@ -21,12 +21,12 @@ jobs:
 
             - name: Execute Remote Commands
               run: |
-                  ssh -o StrictHostKeyChecking=no thdihan@bitscoper.dev -p ${{ secrets.SSH_PORT }} << 'EOF'
-                    cd /home/thdihan/thdihan.dev/
+                  ssh -o StrictHostKeyChecking=no root@139.59.41.51 -p 22 << 'EOF'
+                    cd /root/thdihan.dev/
                     git pull
                     pnpm i
                     pnpm build
-                    sudo systemctl restart pnpm-start-thdihan-dev.service
+                    sudo systemctl restart thdihan_dev.service
                     exit
                   EOF
               shell: bash
