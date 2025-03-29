@@ -25,8 +25,10 @@ const Navbar = () => {
             <div className={`${scrolled ? "h-[75px]" : "h-0"}`}></div>
             <nav
                 className={`w-full ${
-                    scrolled ? "sticky border-b border-[#222f43]" : ""
-                } bg-primary py-6 px-4 md:px-0`}
+                    scrolled
+                        ? "sticky bg-primary border-b border-[#222f43]"
+                        : "bg-transparent"
+                }  py-6 px-4 md:px-0 `}
             >
                 <div
                     className={`w-full max-w-[1260px] mx-auto  flex justify-between items-center`}

@@ -9,7 +9,7 @@ const NavElement = ({ active }: NavElementProps) => {
         <div
             className={`${
                 active
-                    ? "block absolute top-[75px] left-0 bg-primary w-full"
+                    ? "block absolute top-[65px] left-0 bg-primary w-full"
                     : "hidden"
             } md:block`}
         >

@@ -1,11 +1,12 @@
 "use client";
 import { poppins, robotoMono } from "@/fonts";
-import Particles from "../Particles";
+
+// import Particles from "../Particles";
 
 const Hero = () => {
     return (
         <div className="w-full h-[100vh-72px] flex items-center py-64 justify-center">
-            <Particles />
+            {/* <Particles /> */}
             <div>
                 <h1
                     className={`${poppins.className} text-white  text-4xl md:text-8xl text-center`}

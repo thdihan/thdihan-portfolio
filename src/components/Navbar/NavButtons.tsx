@@ -10,7 +10,7 @@ type NavButtonsProps = {
 const NavButtons = ({ active, setActive }: NavButtonsProps) => {
     const [darkMode, setDarkMode] = useState(true);
     return (
-        <div className="flex gap-2 md:gap-6 items-center">
+        <div className="flex gap-2 md:gap-6 items-center z-1000">
             {/* Dark Mode  */}
             <div className="order-2">
                 {darkMode ? (

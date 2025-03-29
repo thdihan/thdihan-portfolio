@@ -28,10 +28,10 @@
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     animation-duration: 0.5s;
     animation-name: fadeInDown;
     animation-timing-function: ease-out;
     z-index: 1000;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
 }
