@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import CustomCursor from "@/components/CustomCursor";
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
@@ -26,12 +28,17 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <Sonner />
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary `}
+                className={`${geistSans.variable} ${geistMono.variable} antialiased  min-h-screen bg-[#0f172a] text-white overflow-x-hidden`}
             >
-                <div className="size-full md:size-[400px] bg-secondary rounded-full blur-[120px] absolute top-[50%] -left-[15%] -translate-y-[50%] opacity-[0.1]"></div>
+                <CustomCursor />
+                {/* <div className="size-full md:size-[400px] bg-secondary rounded-full blur-[120px] absolute top-[50%] -left-[15%] -translate-y-[50%] opacity-[0.1]"></div>
 
-                <div className="size-full md:size-[400px] bg-secondary rounded-full blur-[120px] absolute top-[50%] left-[50%] -translate-y-[50%] opacity-[0.1]"></div>
+                <div className="size-full md:size-[400px] bg-secondary rounded-full blur-[120px] absolute top-[50%] left-[50%] -translate-y-[50%] opacity-[0.1]"></div> */}
+                {/* Background blur effects */}
+                <div className="size-[100vw] md:size-[400px] bg-blue-500 rounded-full blur-[120px] absolute top-[50%] -left-[15%] -translate-y-[50%] opacity-[0.1] -z-10"></div>
+                <div className="size-[100vw] md:size-[400px] bg-purple-500 rounded-full blur-[120px] absolute md:top-[50%] md:left-[50%] -translate-y-[50%] opacity-[0.1] -z-20"></div>
 
                 <Navbar />
 

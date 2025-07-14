@@ -5,7 +5,7 @@ export default function Home() {
         <div>
             <Hero />
 
-            {/* <p>
+            <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et id
                 exercitationem magnam explicabo voluptatibus ullam reprehenderit
                 vero accusamus recusandae minima, sequi debitis officia officiis
@@ -252,7 +252,7 @@ export default function Home() {
                 voluptatem? Sapiente exercitationem itaque alias neque eveniet
                 voluptate! Minus vitae in ea quibusdam iusto aperiam, est
                 voluptatum explicabo recusandae incidunt reiciendis.
-            </p> */}
+            </p>
         </div>
     );
 }

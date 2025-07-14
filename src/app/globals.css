@@ -2,16 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --dark-blue: #0f172a !important;
+@layer base {
+    :root {
+        --background: 222.2 84% 4.9%;
+        --foreground: 210 40% 98%;
+        --card: 222.2 84% 4.9%;
+        --card-foreground: 210 40% 98%;
+        --popover: 222.2 84% 4.9%;
+        --popover-foreground: 210 40% 98%;
+        --primary: 215 28% 17%;
+        --primary-foreground: 210 40% 98%;
+        --secondary: 217 33% 17%;
+        --secondary-foreground: 210 40% 98%;
+        --muted: 217.2 32.6% 17.5%;
+        --muted-foreground: 215 20.2% 65.1%;
+        --accent: 217.2 32.6% 17.5%;
+        --accent-foreground: 210 40% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 217.2 32.6% 17.5%;
+        --input: 217.2 32.6% 17.5%;
+        --ring: 212.7 26.8% 83.9%;
+        --dark-blue: #0f172a;
+        --purple: #9b37ff;
+        --blue-glow: #3b82f6;
+    }
+
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        background: var(--dark-blue);
+        cursor: auto;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Make all buttons more rounded */
+    button {
+        @apply rounded-xl;
+    }
 }
 
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Animation keyframes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes fadeInDown {
@@ -25,13 +71,72 @@
     }
 }
 
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes glow {
+    0%,
+    100% {
+        box-shadow: 0 0 10px var(--blue-glow), 0 0 20px var(--blue-glow);
+    }
+    50% {
+        box-shadow: 0 0 15px var(--blue-glow), 0 0 30px var(--blue-glow),
+            0 0 40px var(--blue-glow);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-fade-in-down {
+    animation: fadeInDown 0.5s ease-out;
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+    animation: glow 2s ease-in-out infinite;
+}
+
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     animation-duration: 0.5s;
     animation-name: fadeInDown;
     animation-timing-function: ease-out;
     z-index: 1000;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
+}
+
+/* Glass morphism effect */
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hover effects with reduced shadows */
+.hover-glow:hover {
+    box-shadow: 0 0 10px var(--blue-glow), 0 0 20px var(--blue-glow);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+/* Text gradient */
+.text-gradient {
+    background: linear-gradient(135deg, #3b82f6, var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
