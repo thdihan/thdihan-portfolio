@@ -32,10 +32,11 @@ export default function RootLayout({
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased  min-h-screen bg-[#0f172a] text-white overflow-x-hidden`}
             >
+                {/* Background blur  */}
                 <CustomCursor />
-                {/* <div className="size-full md:size-[400px] bg-secondary rounded-full blur-[120px] absolute top-[50%] -left-[15%] -translate-y-[50%] opacity-[0.1]"></div>
+                {/* <div className="size-[100vw] md:size-[400px] bg-secondary rounded-full blur-[120px] absolute top-[50%] -left-[15%] -translate-y-[50%] opacity-[0.1] -z-10"></div>
 
-                <div className="size-full md:size-[400px] bg-secondary rounded-full blur-[120px] absolute top-[50%] left-[50%] -translate-y-[50%] opacity-[0.1]"></div> */}
+                <div className="size-[100vw] md:size-[400px] bg-secondary rounded-full blur-[120px] absolute md:top-[50%] md:left-[50%] -translate-y-[50%] opacity-[0.1] -z-20"></div> */}
                 {/* Background blur effects */}
                 <div className="size-[100vw] md:size-[400px] bg-blue-500 rounded-full blur-[120px] absolute top-[50%] -left-[15%] -translate-y-[50%] opacity-[0.1] -z-10"></div>
                 <div className="size-[100vw] md:size-[400px] bg-purple-500 rounded-full blur-[120px] absolute md:top-[50%] md:left-[50%] -translate-y-[50%] opacity-[0.1] -z-20"></div>

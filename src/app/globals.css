@@ -112,6 +112,7 @@
     position: fixed;
     top: 0;
     width: 100vw;
+    width: 100vw;
     animation-duration: 0.5s;
     animation-name: fadeInDown;
     animation-timing-function: ease-out;
