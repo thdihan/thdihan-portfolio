@@ -1,12 +1,5 @@
 "use client";
-import {
-    ArrowDown,
-    Download,
-    Mail,
-    Github,
-    Linkedin,
-    Twitter,
-} from "lucide-react";
+import { ArrowDown, Download, Github, Linkedin } from "lucide-react";
 
 const Hero = () => {
     const scrollToWork = () => {
@@ -47,59 +40,67 @@ const Hero = () => {
                 {/* Description */}
                 <div className="animate-fade-in-up opacity-1 animation-delay-800">
                     <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-                        I craft digital experiences that combine beautiful
-                        design with powerful functionality. Passionate about
-                        creating innovative solutions that make a difference.
+                        I bring together thoughtful design and scalable
+                        engineering to build experiences that matter. Focused on
+                        creating value through code.
                     </p>
                 </div>
 
                 {/* Social Links */}
                 <div className="animate-fade-in-up opacity-1 animation-delay-900 flex justify-center gap-4 mb-8">
                     <a
-                        href="https://github.com"
+                        href="https://github.com/thdihan"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="glass hover:bg-white/10 p-3 rounded-full transition-all duration-300 hover-glow"
+                        className="glass hover:bg-white/10 p-3 rounded-full transition-all duration-300"
                     >
                         <Github className="w-5 h-5 text-gray-400 hover:text-white" />
                     </a>
                     <a
-                        href="https://linkedin.com"
+                        href="https://linkedin.com/in/thdihan"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="glass hover:bg-white/10 p-3 rounded-full transition-all duration-300 hover-glow"
+                        className="glass hover:bg-white/10 p-3 rounded-full transition-all duration-300"
                     >
                         <Linkedin className="w-5 h-5 text-gray-400 hover:text-white" />
                     </a>
-                    <a
+                    {/* <a
                         href="https://twitter.com"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="glass hover:bg-white/10 p-3 rounded-full transition-all duration-300 hover-glow"
+                        className="glass hover:bg-white/10 p-3 rounded-full transition-all duration-300"
                     >
                         <Twitter className="w-5 h-5 text-gray-400 hover:text-white" />
-                    </a>
+                    </a> */}
                 </div>
 
                 {/* CTA Buttons with more rounded corners */}
                 <div className="animate-fade-in-up opacity-1 animation-delay-1000 flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
                     <button
                         onClick={scrollToWork}
-                        className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl flex items-center gap-2 font-medium transition-all duration-300 hover-glow"
+                        className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl flex items-center gap-2 font-medium transition-all duration-300 "
                     >
                         View My Work
                         <ArrowDown className="w-4 h-4" />
                     </button>
 
-                    <button className="glass hover:bg-white/10 text-white px-8 py-3 rounded-xl flex items-center gap-2 font-medium transition-all duration-300">
+                    <button
+                        onClick={() =>
+                            window.open(
+                                "https://drive.google.com/file/d/17UTM_5xRDpQb0R5WmTvsBFN14PYToABW/view?usp=drive_link",
+                                "_blank"
+                            )
+                        }
+                        className="glass hover:bg-white/10 text-white px-8 py-3 rounded-xl flex items-center gap-2 font-medium transition-all duration-300"
+                    >
                         <Download className="w-4 h-4" />
                         Download CV
                     </button>
 
-                    <button className="border border-blue-600 hover:bg-blue-600 text-blue-400 hover:text-white px-8 py-3 rounded-xl flex items-center gap-2 font-medium transition-all duration-300">
+                    {/* <button className="border border-blue-600 hover:bg-blue-600 text-blue-400 hover:text-white px-8 py-3 rounded-xl flex items-center gap-2 font-medium transition-all duration-300">
                         <Mail className="w-4 h-4" />
                         Get In Touch
-                    </button>
+                    </button> */}
                 </div>
 
                 {/* Floating animation indicator */}

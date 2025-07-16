@@ -47,7 +47,7 @@ const Navbar = () => {
                     >
                         <span className="text-blue-400">thdihan</span>
                         <span className="text-white">.</span>
-                        <span className="text-[#9B37FF]">dev</span>
+                        <span className="text-pink-400">dev</span>
                     </h1>
 
                     {/* Desktop Navigation */}

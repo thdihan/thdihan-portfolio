@@ -25,6 +25,8 @@
         --ring: 212.7 26.8% 83.9%;
         --dark-blue: #0f172a;
         --purple: #9b37ff;
+        --orange: #fb923c;
+        --pink: #f472b6;
         --blue-glow: #3b82f6;
     }
 
@@ -136,7 +138,7 @@
 
 /* Text gradient */
 .text-gradient {
-    background: linear-gradient(135deg, #3b82f6, var(--purple));
+    background: linear-gradient(135deg, #3b82f6, var(--pink));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
