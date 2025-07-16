@@ -7,7 +7,7 @@ const Work = () => {
 
     const filterCategories = [
         "All",
-        "React",
+        "React.js",
         "Next.js",
         "Flutter",
         "Node.js",
@@ -17,59 +17,87 @@ const Work = () => {
 
     const projects = [
         {
-            title: "E-Commerce Platform",
+            title: "Insight Form",
             description:
-                "A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.",
-            technologies: ["React", "Node.js", "MongoDB", "TypeScript"],
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
+                "A production-ready, client-focused form builder built with Next.js. Offers personalized form fields, validation, and storage. Designed for scalability and clean UI/UX.",
+            technologies: [
+                "Next.js",
+                "React.js",
+                "Prisma",
+                "PostgreSQL",
+                "React-hook-form",
+            ],
+            image: "https://archive.org/download/placeholder-image/placeholder-image.jpg",
             github: "https://github.com/thdihan",
-            live: "https://demo.example.com",
-            category: ["React", "Node.js", "TypeScript"],
+            live: "https://github.com/thdihan",
+            category: [
+                "Next.js",
+                "React.js",
+                "Prisma",
+                "PostgreSQL",
+                "React-hook-form",
+                "Node.js",
+            ],
         },
         {
-            title: "Task Management App",
+            title: "Health Connect",
             description:
-                "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-            technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
+                "Designed and built a telemedicine platform enabling real-time video consultations, chat messaging, appointment booking, and e-prescriptions between patients and doctors.",
+            technologies: [
+                "React.js",
+                "Next.js",
+                "Node.js",
+                "Express.js",
+                "Prisma",
+                "PostgreSQL",
+            ],
             image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=800&q=80",
             github: "https://github.com/thdihan",
             live: "https://demo.example.com",
-            category: ["Next.js", "TypeScript"],
+            category: ["Next.js", "TypeScript", "Node.js"],
         },
         {
-            title: "Mobile Banking App",
+            title: "Kotha-Britto",
             description:
-                "A secure mobile banking application built with Flutter, featuring biometric authentication, transaction history, and real-time notifications.",
-            technologies: ["Flutter", "Dart", "Firebase"],
+                "AI-powered blog and chatbot platform capable of processing Banglish (Bangla in Roman script) and dynamically enhancing responses based on user interactions. Integrated RAG for improved context-awareness.",
+            technologies: [
+                "Gemini Pro",
+                "React.js",
+                "Redux Toolkit",
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+            ],
             image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80",
             github: "https://github.com/thdihan",
             live: "https://demo.example.com",
-            category: ["Flutter"],
+            category: ["React.js", "Node.js"],
         },
         {
-            title: "AI Data Analytics Platform",
+            title: "PH Fitness Shop",
             description:
-                "A Python-based analytics platform that processes large datasets and provides AI-powered insights with beautiful data visualizations.",
+                "A demo full-stack e-commerce platform with admin and product management capabilities.",
             technologies: [
-                "Python",
-                "Django",
-                "Machine Learning",
-                "PostgreSQL",
+                "React.js",
+                "Redux Toolkit",
+                "Node.js",
+                "Express.js",
+                "MongoDB",
             ],
             image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
             github: "https://github.com/thdihan",
             live: "https://demo.example.com",
-            category: ["Python"],
+            category: ["Python", "Node.js"],
         },
         {
-            title: "Real-time Chat Application",
+            title: "Polashi",
             description:
-                "A modern chat application with real-time messaging, file sharing, and video calls built with Socket.io and React.",
-            technologies: ["React", "Node.js", "Socket.io", "TypeScript"],
+                "A multiplayer Android-based historical card game based on the Battle of Polashi. Multiple players can join from their devices and play with different characters in real time.",
+            technologies: ["Flutter", "Dart", "Android Studio", "Firebase"],
             image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?auto=format&fit=crop&w=800&q=80",
             github: "https://github.com/thdihan",
             live: "https://demo.example.com",
-            category: ["React", "Node.js", "TypeScript"],
+            category: ["Flutter"],
         },
         {
             title: "Portfolio Website Builder",
@@ -110,7 +138,7 @@ const Work = () => {
                             <button
                                 key={category}
                                 onClick={() => setActiveFilter(category)}
-                                className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
+                                className={`px-6 py-3  rounded-xl font-medium transition-all duration-300 ${
                                     activeFilter === category
                                         ? "bg-blue-600 text-white shadow-lg shadow-blue-600/25"
                                         : "glass text-gray-400 hover:text-white hover:bg-white/10"
